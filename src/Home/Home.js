@@ -1,12 +1,13 @@
 import React from 'react'
-import { NavLink } from "./styles";
+import { NavLinkContainer, NavLink } from "./styles";
 
 const Home = () => {
     return (
-        <div>
+        <NavLinkContainer>
             <NavLink to='/datafetching'>Data Fetching</NavLink>
             <NavLink to='/statemanagement'>State Management</NavLink>
-        </div>
+            <NavLink to='/reacttable'>React Table</NavLink>
+        </NavLinkContainer>
     )
 }
 

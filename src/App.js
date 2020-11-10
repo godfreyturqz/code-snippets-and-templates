@@ -3,20 +3,19 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from './Home/Home';
 import DataFetching from './DataFetching/DataFetching';
 import StateManagement from './StateManagement/StateManagement';
+import ReactTable from './ReactTable/ReactTable';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route path='/'><Home /></Route>
-          <Route path='/datafetching'><DataFetching/></Route>
-          <Route path='/statemanagement'><StateManagement/></Route>
+          <Route path='/' exact={true} component={Home}/>
+          <Route path='/datafetching' component={DataFetching}/>
+          <Route path='/statemanagement' component={StateManagement}/>
+          <Route path='/reacttable' component={ReactTable}/>
         </Switch>
-        <StateManagement/>
       </BrowserRouter>
-      <br/>
-      
     </div>
   );
 }
