@@ -6,6 +6,8 @@ import DataFetching from './DataFetching';
 import StateManagement from './StateManagement/StateManagement';
 import Pagination from './Pagination';
 import ReactTable from './ReactTable/ReactTable';
+import Search from './Search';
+import UrlParsing from './UrlParsing';
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
           <Route path='/pagination' component={Pagination}/>
           <Route path='/datafetching' component={DataFetching}/>
           <Route path='/reacttable' component={ReactTable}/>
+          <Route path='/search' component={Search}/>
           <Route path='/statemanagement' component={StateManagement}/>
+          <Route path='/urlparsing/:id' component={UrlParsing}/>
         </Switch>
       </BrowserRouter>
     </div>

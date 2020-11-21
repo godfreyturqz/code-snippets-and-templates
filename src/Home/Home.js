@@ -7,8 +7,10 @@ const Home = () => {
             <NavLink to='/counter'>Counter</NavLink>
             <NavLink to='/pagination'>Pagination</NavLink>
             <NavLink to='/datafetching'>Data Fetching</NavLink>
-            <NavLink to='/statemanagement'>State Management</NavLink>
             <NavLink to='/reacttable'>React Table</NavLink>
+            <NavLink to='/search'>Search</NavLink>
+            <NavLink to='/statemanagement'>State Management</NavLink>
+            <NavLink to='/urlparsing'>URL Parsing</NavLink>
         </NavLinkContainer>
     )
 }
