@@ -8,6 +8,7 @@ import Pagination from './Pagination';
 import ReactTable from './ReactTable/ReactTable';
 import Search from './Search';
 import UrlParsing from './UrlParsing';
+import Modal from './Modal';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/search' component={Search}/>
           <Route path='/statemanagement' component={StateManagement}/>
           <Route path='/urlparsing/:id' component={UrlParsing}/>
+          <Route path='/modal' component={Modal}/>
         </Switch>
       </BrowserRouter>
     </div>
