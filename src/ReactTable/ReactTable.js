@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react'
 import { useTable } from "react-table";
+// eslint-disable-next-line
 import { COLUMNS, GROUPED_COLUMNS } from "./COLUMNS";
 import MOCK_DATA from "./MOCK_DATA.json";
 import "./reactTable.css";
