@@ -9,6 +9,7 @@ import ReactTable from './ReactTable/ReactTable';
 import Search from './Search';
 import UrlParsing from './UrlParsing';
 import Modal from './Modal';
+import ImageSlider from './ImageSlider';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/statemanagement' component={StateManagement}/>
           <Route path='/urlparsing/:id' component={UrlParsing}/>
           <Route path='/modal' component={Modal}/>
+          <Route path='/imageslider' component={ImageSlider}/>
         </Switch>
       </BrowserRouter>
     </div>

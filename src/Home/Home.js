@@ -11,7 +11,8 @@ const Home = () => {
             <NavLink to='/search'>Search</NavLink>
             <NavLink to='/statemanagement'>State Management</NavLink>
             <NavLink to='/urlparsing'>URL Parsing</NavLink>
-            <NavLink to='/Modal'>Modal</NavLink>
+            <NavLink to='/modal'>Modal</NavLink>
+            <NavLink to='/imageslider'>Image Slider</NavLink>
         </NavLinkContainer>
     )
 }
