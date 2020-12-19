@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 
 export const NavLinkContainer = styled.div`
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 `
 
 export const NavLink = styled(Link)`

@@ -10,7 +10,7 @@ function ImageSlider() {
     const [number, setNumber] = useState(0)
 
     const inlineStyle = {
-        width: "100%"
+        width: "50%"
     }
 
     const images = [
@@ -33,8 +33,10 @@ function ImageSlider() {
 
     return (
         <div>
-            <button onClick={decrement}>left</button>
-            <button onClick={increment}>right</button>
+            <div>
+                <button onClick={decrement}>left</button>
+                <button onClick={increment}>right</button>
+            </div>
             <img src={images[number]} alt="bike" style={inlineStyle}/>
             <h1>Photo no. {number + 1 }</h1>
         </div>

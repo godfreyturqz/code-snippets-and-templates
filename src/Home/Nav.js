@@ -1,7 +1,8 @@
 import React from 'react'
-import { NavLinkContainer, NavLink } from "./styles";
+import { NavLinkContainer, NavLink } from './NavStyles'
 
-const Home = () => {
+
+const Nav = () => {
     return (
         <NavLinkContainer>
             <NavLink to='/counter'>Counter</NavLink>
@@ -13,8 +14,9 @@ const Home = () => {
             <NavLink to='/urlparsing'>URL Parsing</NavLink>
             <NavLink to='/modal'>Modal</NavLink>
             <NavLink to='/imageslider'>Image Slider</NavLink>
+            <NavLink to='/cloudinary'>Cloudinary</NavLink>
         </NavLinkContainer>
     )
 }
 
-export default Home
+export default Nav
