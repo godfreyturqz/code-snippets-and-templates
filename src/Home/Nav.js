@@ -15,6 +15,7 @@ const Nav = () => {
             <NavLink to='/modal'>Modal</NavLink>
             <NavLink to='/imageslider'>Image Slider</NavLink>
             <NavLink to='/cloudinary'>Cloudinary</NavLink>
+            <NavLink to='/table'>Table</NavLink>
         </NavLinkContainer>
     )
 }

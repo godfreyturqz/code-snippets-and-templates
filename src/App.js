@@ -11,6 +11,7 @@ import UrlParsing from './UrlParsing'
 import Modal from './Modal'
 import ImageSlider from './ImageSlider'
 import Cloudinary from './Cloudinary'
+import Table from './Table'
 import 'dotenv/config'
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/modal' component={Modal}/>
           <Route path='/imageslider' component={ImageSlider}/>
           <Route path='/cloudinary' component={Cloudinary}/>
+          <Route path='/table' component={Table}/>
         </Switch>
       </BrowserRouter>
     </div>
