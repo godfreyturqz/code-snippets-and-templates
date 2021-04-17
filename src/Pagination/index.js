@@ -11,14 +11,25 @@ const Pagination = () => {
     const [startPage, setStartPage] = useState(0)
 
     useEffect(()=> {
-        axios
-        .get(`https://jsonplaceholder.typicode.com/posts/`)
-        .then(res => {
-            const limitPost = res.data.slice(startPage , startPage + 3)
-            setPosts(limitPost)
-        })
-        .catch(err => console.log(err))
+        // simple way to fetch data
+        // axios
+        // .get(`https://jsonplaceholder.typicode.com/posts/`)
+        // .then(res => {
+        //     const limitPost = res.data.slice(startPage , startPage + 3)
+        //     setPosts(limitPost)
+        // })
+        // .catch(err => console.log(err))
 
+        // fetch data with async/await
+        try {
+            const fetchData = async () => {
+                const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/`)
+                setPosts(response.data.slice(startPage , startPage + 3))
+            }
+            fetchData()
+        } catch (error) {
+            console.log(error)
+        }
     }, [startPage])
 
     // insert these functions to next and prev page buttons
@@ -47,7 +58,6 @@ const Pagination = () => {
                     </div>
                 )
             }
-            
         </>
     )
 }
